@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='logo_icon/favicon_io/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='logo_icon/favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='logo_icon/favicon_io/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{url_for('static', filename='logo_icon/favicon_io/site.webmanifest')}}">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Social media facebook -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:title" content="python developer portfolio" />
+    <meta property="og:description" content="Portfolio of python devloper to menifest skills and creativity." />
+    <meta property="og:image" content="{{url_for('static', filename='profile/cardD.jpg') }}" />
+
+    <!--Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="python developer portfolio">
+    <meta name="twitter:description" content="Portfolio of python developer to manifest skills and creativity.">
+    <meta name="twitter:image" content="{{url_for('static', filename='profile/cardD.jpg') }}">
+
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Spartan:wght@700;800;900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- In Js -->
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Internal css  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+    <title>Me in portfolio</title>
+</head>
+
+<body>
+
+    <section id="intro">
+        <div class="container-fluid position-relative overflow-hidden">
+            <nav class="navbar navbar-expand-lg bg-black">
+                <div class="container">
+                    <a href="{{url_for('home')}}" class="navbar-brand"><img class="nav-logo rounded-circle" src="static/logo_icon/brand-n-logo.jpg" alt="brand logo"></a>
+                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#tocollapse"><i class="fas fa-bars"></i></button>
+                    <div class="collapse navbar-collapse item-div" id="tocollapse">
+                        <ul class="navbar-nav ms-auto font-open">
+
+
+                            <li class="nav-item font-one mx-3">
+                                <a href="#skills" class="nav-link text-dark fw-bold">Skills</a>
+                            </li>
+
+                            <li class="nav-item font-one mx-3">
+                                <a href="#work" class="nav-link fw-bold text-dark">Work</a>
+                            </li>
+
+                            <li class="nav-item font-one mx-3">
+                                <a href="#talk" class="nav-link text-dark fw-bold">Talk</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="w-100 d-flex flex-column justify-content-center align-items-center main-content-center">
+                <div class="container-fluid ml-mr bg-black h-50">
+                    <div class="row">
+                        <div class="col-md-7 d-flex flex-column justify-content-end align-items-md-start align-items-center text-start my-name">
+                            <span class="clr-red font-spar display-6 myNameLatter">I'm</span> <span class="text-uppercase fw-bolder clr-highlight font-spar fnt-siz-big myNameLatter">Suraj</span>
+
+                        </div>
+
+                        <div class="col-md-5 d-flex flex-row justify-content-md-end justify-content-center align-items-center">
+                            <img class="pro-img" src="static/profile/portfolio-profile-picture.png" alt="portfolio profile picture">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <img class="top-deco-img opacity-50 w-100 position-absolute bottom-0 start-0" src="static/bg_deco/top-wave.svg" alt="wave svg picture">
+        </div>
+
+
+    </section>
+
+    <section id='intro-detail'>
+
+
+        <div class="container-fluid bg-slate sec-div">
+            <h1 class="display-2 font-spar"><span class="clr-red text-decoration-underline">About</span> <span class="text-light">me</span></h1>
+
+            <div class="w-100 d-flex flex-column justify-content-center main-content-center">
+                <div class="border sm-sh-full border-3 border-info p-md-3 m-lg-4 m-2 bx-in-shadow bd-rnd-16 bg-black d-flex flex-md-row flex-column justify-content-center justify-content-md-end flex-column position-relative">
+                    <img class="w-50 align-self-center animate_element" src="static/profile/imageedit_1_9418974297.png" alt="programming image">
+                    <div class="bg-blue mx-auto m-lg-3 flex-fill p-md-2 p-lg-4 p-xl-5 p-4 bd-rnd-16 animate_element">
+                        <p class="fs-5 text-light text-md-start text-center">Love developing code to accomplish a task, I make and design web pages and web apps on Django 🤎 and react. Learning has not ended yet. I made this web to manifest in minimizing what I can build.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <section id="skills">
+        <div class="container-fluid bg-black">
+            <h1 class="display-3 font-spar"><span class="clr-red text-decoration-underline">Languages</span> <span class="text-light">& Framework</span></h1>
+
+            <div class="w-100 d-flex flex-column justify-content-center main-content-center">
+                <div class="w-100 h-75 m-md-3 d-flex flex-column justify-content-center m-2 border border-2 border-warning bd-rnd-16 bx-in-shadow bg-slate">
+                    <div class="row g-1 mx-auto p-3 overflow-hidden skill-parent bd-rnd-16 animate_element">
+                        <div class="col-md-4 col-6 text-center d-flex align-items-center justify-content-center bd-rnd-16 skills"><img class="skill-img rounded-3" src="{{url_for('static', filename='logo_icon/py-logo.jpg')}}" alt="python logo"></div>
+                        <div class="col-md-4 col-6 text-center d-flex align-items-center justify-content-center bd-rnd-16 skills"><img class="skill-img rounded-3" src="{{url_for('static', filename='logo_icon/js-logo.jpg')}}" alt="javascript logo"></div>
+                        <div class="col-md-4 col-6 text-center d-flex align-items-center justify-content-center bd-rnd-16 skills"><img class="skill-img rounded-3" src="{{url_for('static', filename='logo_icon/dj-logo.jpg')}}" alt="django logo"></div>
+                        <div class="col-md-4 col-6 text-center d-flex align-items-center justify-content-center bd-rnd-16 skills"><img class="skill-img rounded-3" src="{{url_for('static', filename='logo_icon/html-logo.jpg')}}" alt="html logo"></div>
+                        <div class="col-md-4 col-6 text-center d-flex align-items-center justify-content-center bd-rnd-16 skills"><img class="skill-img rounded-3" src="{{url_for('static', filename='logo_icon/cs-logo.jpg')}}" alt="css logo"></div>
+                        <div class="col-md-4 col-6 text-center d-flex align-items-center justify-content-center bd-rnd-16 skills"><img class="skill-img rounded-3" src="{{url_for('static', filename='logo_icon/react-logo.jpg')}}" alt="react logo "></div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container-fluid bg-slate">
+            <h2 class="display-3 font-spar"><span class="clr-red text-decoration-underline">Work</span> <span class="text-light">Bits</span></h2>
+            <div class="w-100 d-flex flex-column justify-content-center align-items-center main-content-center">
+
+                <!-- PARENT CAROUSEL STARTS HERE  -->
+                <div id="workcarousel" class="carousel slide animate_element" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- All the slides  -->
+                        <!-- ---------------------------------------------------------------------------------------  -->
+
+                        <div class="carousel-item active">
+                            <!-- First item is here  -->
+                            <div class="p-3 mx-auto workParent position-relative bd-rnd-16 overflow-hidden">
+
+                                <div class="w-100 h-75 mx-auto">
+                                    <video class="rounded-3 shadow vid-block" src="{{ url_for('static', filename='work_vid/quizller.mp4') }}" autoplay loop muted></video>
+
+
+                                    <div class="row mx-auto vid-block">
+
+                                        <div class="col-12 col-md-8 p-md-2 p-1 font-open fw-bold shadow-lg border border-1 border-info rounded-3"><span>Quiz desktop app.</span></div>
+                                        <div class="col-12 col-md-4 p-md-2 p-1 rounded-3 shadow-lg border border-1 border-warning clr-red"><span class="font-spar fw-bold project-lang">Python</span></div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="position-absolute shadow-lg discrip p-3 mx-auto bd-rnd-16 row">
+                                    <div class="col-md-6 col-12">
+                                        <p class="text-md-start text-center font-open fs-5">
+                                            A fun educational app for playing with questions. It uses API to provide
+                                            with new questions every time you use it.
+                                             </p>
+
+                                    </div>
+                                    <div class="col-md-6 col-12"><a target="_blank" href="https://replit.com/@suraj10/Quizler?embed=1&output=1#main.py" class="btn font-open shadow btn-info btn-lg">Try out</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- ------------------------------------------------------------------------------------- -->
+                        <div class="carousel-item">
+                            <!-- The sec item is here -->
+                            <div class="p-3 m-auto workParent position-relative bd-rnd-16 overflow-hidden">
+
+                                <div class="w-100 h-75 mx-auto">
+                                    <video class="rounded-3 shadow vid-block" src="{{url_for('static', filename='work_vid/pong.mp4')}}" autoplay loop muted></video>
+                                    <div class="row pro-title-block mx-auto vid-block">
+                                        <div class="col-12 col-md-8 p-md-2 p-1 font-open fw-bold shadow-lg border border-1 border-info rounded-3"><span>Pong game made with turtle</span></div>
+                                        <div class="col-12 col-md-4 p-md-2 p-1 rounded-3 shadow-lg border border-1 border-warning clr-red"><span class="font-spar fw-bold project-lang">Python</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="position-absolute shadow-lg discrip p-3 mx-auto bd-rnd-16 row">
+                                    <div class="col-md-6 col-12">
+                                        <p class="text-md-start text-center font-open fs-5">
+                                            One of the loved arcade game. It is made with turtle library.
+                                            Try out the game on replit. ⬆ and ⬇ for right paddle and w and s key for left one.
+                                        </p>
+
+                                    </div>
+                                    <div class="col-md-6 col-12"><a target="_blank" href="https://replit.com/@suraj10/pyportfolio?embed=1&output=1#main.py" class="btn font-open shadow btn-info btn-lg">Try out</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- ---------------------------------------------------------------------------------------------- -->
+                        <div class="carousel-item">
+                            <!-- Third item is here  -->
+                            <div class="p-3 workParent mx-auto position-relative bd-rnd-16 overflow-hidden">
+
+                                <div class="w-100 h-75 mx-auto">
+                                    <video class="rounded-3 shadow vid-block" src="{{url_for('static', filename='work_vid/hist painting.mp4')}}" autoplay loop muted></video>
+                                    <div class="row pro-title-block mx-auto vid-block">
+                                        <div class="col-12 col-md-8 p-md-2 p-1 font-open fw-bold shadow-lg border border-1 border-info rounded-3"><span>Automatic dot spot painter.</span></div>
+                                        <div class="col-12 col-md-4 p-md-2 p-1 rounded-3 shadow-lg border border-1 border-warning clr-red"><span class="font-spar fw-bold project-lang">Python</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="position-absolute shadow-lg discrip p-3 mx-auto bd-rnd-16 row">
+                                    <div class="col-md-6 col-12">
+                                        <p class="text-md-start text-center font-open fs-5">
+                                            This project mimics the famous dot spot painting with different set of colors.
+                                             Recently one spot painting was sold in millions.
+                                        </p>
+
+                                    </div>
+                                    <div class="col-md-6 col-12"><a target="_blank" href="https://replit.com/@suraj10/hist-painter?embed=1&output=1#main.py" class="btn font-open shadow btn-info btn-lg">Try out</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+<!--                        ............................................................................-->
+
+
+
+                        <div class="carousel-item">
+                            <!-- Fourth item is here -->
+                            <div class="p-3 m-auto workParent position-relative bd-rnd-16 overflow-hidden">
+
+                                <div class="w-100 h-75 mx-auto">
+                                    <video class="rounded-3 shadow vid-block" src="{{ url_for('static', filename='work_vid/pamodora.mp4') }}" autoplay loop muted></video>
+                                    <div class="row pro-title-block mx-auto vid-block">
+                                        <div class="col-12 col-md-8 p-md-2 p-1 font-open fw-bold shadow-lg border border-1 border-info rounded-3"><span>App made on pomodoro technique</span></div>
+                                        <div class="col-12 col-md-4 p-md-2 p-1 rounded-3 shadow-lg border border-1 border-warning clr-red"><span class="font-spar fw-bold project-lang">Python</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="position-absolute shadow-lg discrip p-3 mx-auto bd-rnd-16 row">
+                                    <div class="col-md-6 col-12">
+                                        <p class="text-md-start text-center font-open fs-5">
+                                            Productivity desktop app made with Tkinter. It is based on famous pomodoro technique.
+                                        </p>
+
+                                    </div>
+                                    <div class="col-md-6 col-12"><a target="_blank" href="https://replit.com/@suraj10/pamadora-app?embed=1&output=1#main.py" class="btn font-open shadow btn-info btn-lg">Try out</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+<!--                        ..............................................................................-->
+
+
+<!--                        .............................................................................-->
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="talk">
+        <div class="container-fluid">
+            <h2 class="display-3 font-spar"><span class="text-decoration-underline clr-red">Let's</span> <span class="text-light">Talk</span></h2>
+
+            <div class="w-100 d-flex flex-column justify-content-center main-content-center">
+
+
+
+
+                <div class="online-card animate_element form-cont-height d-flex flex-column justify-content-center bd-rnd-16 p-2 mx-auto form-container">
+                    <form class="animate_element" action="{{ url_for('home') }}" method="POST">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                        <input class="form-control shadow form-element-w mx-auto bdr-blue rounded-3 m-1" type="text" name="senders_name" id="senders_name" placeholder="Your Name" required>
+                        <input class="form-control shadow form-element-w mx-auto bdr-blue rounded-3 m-1" type="email" name="senders_email" id="senders_email" placeholder="sweetname@email.com" required>
+                        <textarea class="bd-rnd-16 shadow form-element-w p-2  bdr-blue" name="message" id="message" cols="30" rows="10" required placeholder="Let's work together to make something unforgetful"></textarea>
+                        <button class="form-element-w btn btn-lg bd-rnd-16 btn-primary bg-blue" type="submit"><span><i class="fas fa-paper-plane"></i></span></button>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <footer class="font-spar text-dark fw-bold">
+        <i class="fas fa-copyright"></i> Suraj Sarkar {{ presest_year }}
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
